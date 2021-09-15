@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asociate</title>
+    <link rel="stylesheet" href="../stylo/stylo.css">
+    <link rel="stylesheet" href="./stylo/stylo.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Archivo+Narrow&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <header class="header">
+        <a class="headerFoto" href="../">
+"            <img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Escudo-Centro-Espa%C3%B1ol.png" alt="Logo centro" width="100">
+"        </a>            
+            
+        <nav class="headerMenu">
+            <ul>
+                <li><a href="../Secciones de la pagina/Historia.html">Historia </a></li> 
+                <li><a href="../Secciones de la pagina/Actividades.html">Actividades</a></li>
+                <li><a href="../Secciones de la pagina/Asociate.html">Asociate</a></li>
+                <li><a href="../Secciones de la pagina/Noticias.html">Noticias</a></li>
+                <li><a href="../Secciones de la pagina/Como-llegar.html">Como llegar</a></li>
+            </ul>
+        </nav>
+            
+    </header>
+    
+    <main id="main">
+        <h2 class="mainSubtitulos">Asociate:</h2>
+
+        <p class="mainSubtitulosParrafo">Llena este formulario para que nos contactemos con vos y puedas hacerte socio!</p>
+        
+        <form action="enviar.php" method="GET" class="mainFormulario">
+            <fieldset>
+
+                
+                <label class="mainFormularioDatos" for="Nombre">Nombre y Apellido:</label>
+                <input type="text" id="Nombre" required>
+                
+                <label class="mainFormularioDatos" for="Mail">Mail:</label>
+                <input type="mail" id="Mail" required> 
+
+                <div class="mainFormularioSexo">   
+                    <input type="radio" name="Sexo">Hombre <input type="radio" name="Sexo">Mujer <input type="radio" name="Sexo">Otro
+                </div>
+
+            
+                <label class="mainFormularioDatos" for="Deportes">Deportes:</label>
+                    <select name="Deportes" id="Deportes">
+                        <option value="Futbol">Futbol</option>
+                        <option value="Basquet">Basquet</option>
+                        <option value="Natacion">Natacion</option>
+                        <option value="Gimnasia">Gimnasia</option>
+                        <option value="Otro">Otro</option>
+                    </select>
+
+
+                <div class="mainFormularioTerminos">
+                    <input type="checkbox" name="Terminos" id="Terminos">Desea recibir la revista de Centro Español
+                </div>
+
+                <input class="mainFormularioEnviar" type="submit" value="Enviar Ahora">
+
+                <input class="mainFormularioReset" type="Reset" value="Empezar de nuevo">
+
+             </fieldset>
+        </form>
+
+
+    </main>
+
+    <footer id="footer">
+        <p>Cualquier Consuulta comunicase a este telefono 11-xxxx-xxxx</p>
+    </footer>
+    
+
+
+
+
+
+
+
+</body>

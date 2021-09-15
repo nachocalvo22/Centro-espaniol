@@ -1,0 +1,450 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    background-color: #131875;
+}
+
+
+
+
+
+/* Header*/
+
+.header {
+    display: flex;
+    color: #0000ff;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px;
+    }
+
+.headerFoto img {
+        width: 100px;
+        height: 100px;
+    }
+
+    
+#botonMenu { /* Id Y CLASE  */
+    display: none;
+} 
+.botonMenu {
+    display: none;
+    width: 30px;
+    height: 30px;
+    padding: 10px;
+    border-right: 1px solid #ffff ;
+}
+.headerMenu ul {
+    font-size: 18px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-family: 'Archivo Narrow', sans-serif;
+    }
+    
+.headerMenu ul li a {
+        padding: 10px;
+        color: white;
+    }
+
+nav ul li a:hover {
+    background-color: #106ed3
+}
+
+
+   
+/*Main*/
+
+.mainNombre { 
+    color: white;
+    font-style: normal;
+    font-size: normal;
+    font-weight: bold;
+    font-size: 36px;
+    font-family: 'Archivo Black', sans-serif;
+    line-height: 1;
+    margin-top: 18px;
+    margin-left: 8px;
+    width: 700px;
+}
+
+.mainSubtitulos {
+    color: white;
+    font-style: italic;
+    font-size: 26px;
+    font-weight: bold;
+    font-family: 'Archivo Narrow', sans-serif;
+    line-height: 1.3;
+    margin-top: 30px;
+    margin-bottom: 8px;
+    margin-left: 8px;
+}
+
+.mainSubtitulosParrafo {
+    color: white;
+    font-style: normal;
+    font-size: 16px;
+    font-weight: normal;
+    font-family: 'Archivo Narrow', sans-serif;
+    margin-top: 20px;
+    margin-left: 8px;
+}
+
+@keyframes aparecer { /* Animacion aparacer y desaparecer */
+    0% {
+        opacity: 0;
+        left: -1000px;
+    }
+    100% {
+        opacity: 1;
+        left: 100px;
+    }
+}
+
+.mainSubtitulos2 { /* INDEX */
+    color: white;
+    background-color: rgb(74, 74, 228);
+    width: 270px;
+    font-style: italic;
+    font-size: 26px;
+    font-weight: bold;
+    font-family: 'Archivo Narrow', sans-serif;
+    line-height: 1.3;
+    margin-top: 30px;
+    margin-bottom: 62px;
+    margin-left: 8px;
+    animation: aparecer 2s linear 0s 1;
+    animation-iteration-count: infinite;
+}
+
+.mainFotoEstadio {
+    width: 80%;
+    height: 400px;
+}
+
+
+.mainSubtitulosNoticion {
+    font-size: 24px;
+    color: white;
+    font-style: normal;
+    font-weight: normal;
+    font-family: 'Archivo Narrow', sans-serif;
+    margin-top: 60px;
+    margin-left: 8px;
+    margin-bottom: 30px;
+}
+
+.mainSubtitulos3 {
+    font-size: 20px;
+    color: white;
+    font-style: normal;
+    font-weight: normal;
+    font-family: 'Archivo Narrow', sans-serif;
+    margin-top: 30px;
+    margin-left: 8px;
+    margin-bottom: 30px;
+}
+
+
+#parrafoHistoria { /*seccion historia */
+    display: inline;
+    line-height: 30px;
+
+}
+
+#parrafoHistoria2 {
+    line-height: 30px;
+}
+
+.mainFotoEntrada {
+    width: 300px;
+    height: 200px;
+    float: left;
+    margin-right: 50px;
+    margin-bottom: 30px;
+}
+
+
+
+
+.mainTabla{   /*Tabla Actividades*/
+    color: black;
+    font-style: normal;
+    font-size: 18px;
+    font-weight: normal;
+    font-family: 'Times New Roman', Times, serif;
+    width: 80%;
+    height: 70%;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border-collapse: collapse;
+    border-radius: 4px;
+}
+
+.mainTabla th, td {
+
+    color: black;
+    border: 1px solid black;
+    padding: 4px;
+    text-align: center;
+    background-color: rgb(189, 189, 189);
+}
+
+/*Sector Asociate */
+.mainFormulario {
+    font-size: 16x;
+    font-style: normal;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    line-height: 1.3;
+    border:0;
+    padding: 4px;
+    width: 30%;
+    height: 240px;
+    margin-top: 20px;
+    margin-bottom: 5px;
+    margin-left: 8px;
+    border-radius: 4px;
+    color: white;
+}
+
+.mainFormularioDatos {
+font-size: 16px;
+font-weight: normal;
+font-family: 'Times New Roman', Times, serif;
+line-height: 1.3;
+display: inline-block;
+width: 100%;
+}
+
+#Deportes {
+    color: white;
+    margin-top: 5px;
+}
+
+#Nombre, #Mail {
+    width: 70%;
+    height: 15px;
+    background-color: gainsboro;
+    margin-bottom: 10px;
+}
+
+.mainFormularioEnviar {
+    background-color: gainsboro;
+    border-radius: 5px;
+    width: 100px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.mainFormularioReset {
+    background-color: gainsboro;
+    border-radius: 5px;
+    width: 130px;
+    text-align: center;
+}
+
+/*cree varios div ya que no lograba que me quede bien las partes donde esta colocado el sexo y los terminos*/
+.mainFormulario .mainFormularioSexo {
+    display: block;
+    margin-bottom: 10px;
+}
+
+
+.mainFormulario .mainFormularioEnviar {
+    display: inline-block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    
+}
+
+.mainFormulario .mainFormularioTerminos {
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+
+/* Sector Noticias */
+
+/* Noticias */
+
+.gridNoticias {
+    display: grid;
+    padding: 20px;
+    font-family: 'Archivo Narrow', sans-serif;
+    height: 800px;
+    grid-template-columns:350px 1fr 1fr;
+    grid-template-rows: 80px 200px 260px;
+    gap: 10px;
+}
+
+.gridNoticiasItemTitulo {
+    color: white;
+    grid-column: 1/2;
+    font-size: 26px;
+}
+
+.gridNoticiasItemFotoVsCADP{
+    grid-column: 1/2;
+
+}
+
+.gridNoticiasItemFotoVsCADP img {
+    width: 350px;
+    height: 180px;
+}
+
+.gridNoticiasItemParrafo {
+    color: white;
+    line-height: 1.5;
+    grid-column: 2/4;
+}
+
+.gridNoticiasItemFotoEquipo {
+    grid-column: 2/1;
+}
+.gridNoticiasItemFotoEquipo img {
+    width: 350px;
+    height: 250px;
+}
+
+.gridNoticiasItemResumen {
+    color: white;
+    line-height: 1.5;
+    grid-column: 2/4;
+}
+
+.gridNoticiasItemOtras {
+    color: white;
+    line-height: 1.5;
+    grid-column: 1/4;
+}
+
+.OtrasNoticiasTitulo {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.OtrasNoticiasParrafo {
+    margin-top: 4px;
+}
+
+/* Como llegar: */
+#main .mainMapa {  
+    width: 100vh;
+    height: 80vh;
+    border-radius: 4px;
+    margin-top: 10px;
+    margin-left: 8px;
+
+}
+
+
+
+/*Footer*/
+
+#footer { /* Footer para Actividades y Asociate */
+    color: white;
+    font-style: normal;
+    font-size: 16px;
+    font-weight: normal;
+    font-family: 'Archivo Narrow', sans-serif;
+    line-height: 1.5;
+    margin-top: 20px;
+    margin-left: 8px;
+    margin-bottom: 10px;
+}
+
+#footer .footerAutoridades {
+    font-style: italic;
+}
+
+@media(max-width: 550px) {/* Medida Telefono */
+    
+    .header {
+
+    }
+.headerMenu {
+    display: none;
+    text-align: right;
+}
+.mainNombre {       
+    font-size: 20px;
+    }
+    .botonMenu {   /* Menu Hamburguesa */
+        box-sizing: border-box; 
+        display: flex;
+        flex-direction: column;
+        border:  1px solid black;
+        border-radius: 5px;
+        width: 40px;
+        height: 40px;
+        line-height: 30px;
+        font-weight: bold;
+        text-align: center;
+    }
+    .headerMenu ul {
+        flex-direction: column;
+        font-size: 12px;
+
+    }
+    .headerMenu li {
+    }
+
+    .headerMenu ul li a {
+        color: black;
+        background: gray;
+        font-weight: bold;
+        margin-top: 2px;
+        padding: 0px;
+    }
+
+    #botonMenu:checked ~ .headerMenu {
+        display: block;
+    }
+
+    nav ul li a:hover {
+        background-color: #106ed3
+    }
+
+
+    .mainSubtitulos, .mainSubtitulos2, .mainSubtitulosNoticion, .mainSubtitulos3, .mainSubtitulosParrafo, .OtrasNoticiasTitulo {
+        font-size: 16px;
+    }
+
+    .mainFotoEntrada  {/* Sector Historia */
+    width: 200px;
+    height: 100;
+    }
+
+    .gridNoticias { /* Sector Noticias */
+        display: grid;
+        padding: 20px;
+        font-family: 'Archivo Narrow', sans-serif;
+        height: 600px;
+        grid-template-columns: 200px 1fr 1fr;
+        grid-template-rows: 60px 150px 250px;
+        gap: 10px;
+    }
+
+    .mainFormulario { /* Sector Asociate */
+        padding: 4px;
+        width: 70%;
+        color: white;
+    }
+    .gridNoticiasItemParrafo, .gridNoticiasItemResumen, .OtrasNoticiasParrafo { /* Sector Noticias */
+        font-size: 14px;
+    }
+    .gridNoticiasItemFotoVsCADP img, .gridNoticiasItemFotoEquipo img { 
+        height: 150px;
+        width: 200px;
+    }
+
+}
+
