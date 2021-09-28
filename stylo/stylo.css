@@ -6,56 +6,11 @@
     list-style: none;
     background-color: #131875;
 }
-
-
-
-
+body {
+    background-color: #131875;
+}
 
 /* Header*/
-
-.header {
-    display: flex;
-    color: #0000ff;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    padding: 20px;
-    }
-
-.headerFoto img {
-        width: 100px;
-        height: 100px;
-    }
-
-    
-#botonMenu { /* Id Y CLASE  */
-    display: none;
-} 
-.botonMenu {
-    display: none;
-    width: 30px;
-    height: 30px;
-    padding: 10px;
-    border-right: 1px solid #ffff ;
-}
-.headerMenu ul {
-    font-size: 18px;
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    font-family: 'Archivo Narrow', sans-serif;
-    }
-    
-.headerMenu ul li a {
-        padding: 10px;
-        color: white;
-    }
-
-nav ul li a:hover {
-    background-color: #106ed3
-}
-
 
    
 /*Main*/
@@ -68,7 +23,6 @@ nav ul li a:hover {
     font-size: 36px;
     font-family: 'Archivo Black', sans-serif;
     line-height: 1;
-    margin-top: 18px;
     margin-left: 8px;
     width: 700px;
 }
@@ -351,14 +305,11 @@ width: 100%;
 
 #footer { /* Footer para Actividades y Asociate */
     color: white;
-    font-style: normal;
     font-size: 16px;
     font-weight: normal;
     font-family: 'Archivo Narrow', sans-serif;
     line-height: 1.5;
-    margin-top: 20px;
-    margin-left: 8px;
-    margin-bottom: 10px;
+    margin-bottom: 40px;
 }
 
 #footer .footerAutoridades {
@@ -366,52 +317,6 @@ width: 100%;
 }
 
 @media(max-width: 550px) {/* Medida Telefono */
-    
-    .header {
-
-    }
-.headerMenu {
-    display: none;
-    text-align: right;
-}
-.mainNombre {       
-    font-size: 20px;
-    }
-    .botonMenu {   /* Menu Hamburguesa */
-        box-sizing: border-box; 
-        display: flex;
-        flex-direction: column;
-        border:  1px solid black;
-        border-radius: 5px;
-        width: 40px;
-        height: 40px;
-        line-height: 30px;
-        font-weight: bold;
-        text-align: center;
-    }
-    .headerMenu ul {
-        flex-direction: column;
-        font-size: 12px;
-
-    }
-    .headerMenu li {
-    }
-
-    .headerMenu ul li a {
-        color: black;
-        background: gray;
-        font-weight: bold;
-        margin-top: 2px;
-        padding: 0px;
-    }
-
-    #botonMenu:checked ~ .headerMenu {
-        display: block;
-    }
-
-    nav ul li a:hover {
-        background-color: #106ed3
-    }
 
 
     .mainSubtitulos, .mainSubtitulos2, .mainSubtitulosNoticion, .mainSubtitulos3, .mainSubtitulosParrafo, .OtrasNoticiasTitulo {
