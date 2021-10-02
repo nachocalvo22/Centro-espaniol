@@ -12,8 +12,6 @@ body {
   background-color: #131875;
 }
 
-/* Header*/
-/*Main*/
 .main {
   color: white;
   font-style: normal;
@@ -114,8 +112,8 @@ body {
   margin-bottom: 30px;
 }
 
+/* Seccion Historia */
 #parrafoHistoria {
-  /*seccion historia */
   display: inline;
   line-height: 30px;
 }
@@ -130,6 +128,16 @@ body {
   float: left;
   margin-right: 50px;
   margin-bottom: 30px;
+}
+
+@media (max-width: 550px) {
+  /* Medida Telefono */
+  .mainFotoEntrada {
+    width: 200px;
+    height: 100px;
+    margin-right: 20px;
+    margin-bottom: 15px;
+  }
 }
 
 .mainTabla {
@@ -301,8 +309,29 @@ body {
   margin-bottom: 10px;
 }
 
-.OtrasNoticiasParrafo {
+.OtrasNoticiasParrafo-1 {
   margin-top: 4px;
+}
+
+.OtrasNoticiasParrafo-2 {
+  margin-top: 4px;
+}
+
+@media (max-width: 550px) {
+  /* Medida Telefono */
+  .gridNoticias {
+    /* Sector Noticias */
+    display: -ms-grid;
+    display: grid;
+    padding: 20px;
+    font-family: 'Archivo Narrow', sans-serif;
+    height: 600px;
+    -ms-grid-columns: 200px 1fr 1fr;
+        grid-template-columns: 200px 1fr 1fr;
+    -ms-grid-rows: 60px 150px 250px;
+        grid-template-rows: 60px 150px 250px;
+    gap: 10px;
+  }
 }
 
 /* Como llegar: */
@@ -329,8 +358,8 @@ body {
   font-style: italic;
 }
 
+/* Medidas Para telefonos */
 @media (max-width: 550px) {
-  /* Medida Telefono */
   .mainSubtitulos, .mainSubtitulos2, .mainSubtitulosNoticion, .mainSubtitulos3, .mainSubtitulosParrafo, .OtrasNoticiasTitulo {
     font-size: 16px;
   }

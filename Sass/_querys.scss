@@ -1,0 +1,38 @@
+
+@media(max-width: 550px) {
+
+
+    .mainSubtitulos, .mainSubtitulos2, .mainSubtitulosNoticion, .mainSubtitulos3, .mainSubtitulosParrafo, .OtrasNoticiasTitulo {
+        font-size: 16px;
+    }
+
+    .mainFotoEntrada  {/* Sector Historia */
+    width: 200px;
+    height: 100;
+    }
+
+    .gridNoticias { /* Sector Noticias */
+        display: grid;
+        padding: 20px;
+        font-family: 'Archivo Narrow', sans-serif;
+        height: 600px;
+        grid-template-columns: 200px 1fr 1fr;
+        grid-template-rows: 60px 150px 250px;
+        gap: 10px;
+    }
+
+    .mainFormulario { /* Sector Asociate */
+        padding: 4px;
+        width: 70%;
+        color: white;
+    }
+    .gridNoticiasItemParrafo, .gridNoticiasItemResumen, .OtrasNoticiasParrafo { /* Sector Noticias */
+        font-size: 14px;
+    }
+    .gridNoticiasItemFotoVsCADP img, .gridNoticiasItemFotoEquipo img { 
+        height: 150px;
+        width: 200px;
+    }
+
+}
+

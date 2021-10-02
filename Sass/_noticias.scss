@@ -1,0 +1,82 @@
+
+/* Sector Noticias */
+
+/* Noticias */
+
+.gridNoticias {
+    display: grid;
+    padding: 20px;
+    font-family: 'Archivo Narrow', sans-serif;
+    height: 800px;
+    grid-template-columns:350px 1fr 1fr;
+    grid-template-rows: 80px 200px 260px;
+    gap: 10px;
+}
+
+.gridNoticiasItemTitulo {
+    color: white;
+    grid-column: 1/2;
+    font-size: 26px;
+}
+
+.gridNoticiasItemFotoVsCADP{
+    grid-column: 1/2;
+
+}
+
+.gridNoticiasItemFotoVsCADP img {
+    width: 350px;
+    height: 180px;
+}
+
+.gridNoticiasItemParrafo {
+    color: white;
+    line-height: 1.5;
+    grid-column: 2/4;
+}
+
+.gridNoticiasItemFotoEquipo {
+    grid-column: 2/1;
+}
+.gridNoticiasItemFotoEquipo img {
+    width: 350px;
+    height: 250px;
+}
+
+.gridNoticiasItemResumen {
+    color: white;
+    line-height: 1.5;
+    grid-column: 2/4;
+}
+
+.gridNoticiasItemOtras {
+    color: white;
+    line-height: 1.5;
+    grid-column: 1/4;
+}
+
+.OtrasNoticiasTitulo {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+@for $i from 1 through 2 {
+    .OtrasNoticiasParrafo-#{$i} {
+        margin-top: 4px;
+    }
+    
+}
+
+@media(max-width: 550px) {/* Medida Telefono */
+
+
+    .gridNoticias { /* Sector Noticias */
+        display: grid;
+        padding: 20px;
+        font-family: 'Archivo Narrow', sans-serif;
+        height: 600px;
+        grid-template-columns: 200px 1fr 1fr;
+        grid-template-rows: 60px 150px 250px;
+        gap: 10px;
+    }   
+    }

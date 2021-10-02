@@ -1,0 +1,33 @@
+/* Seccion Historia */
+
+$ancho: 300px;
+$largo: 200px;
+
+#parrafoHistoria {
+    display: inline;
+    line-height: 30px;
+}
+  
+#parrafoHistoria2 {
+    line-height: 30px;
+}
+  
+  
+.mainFotoEntrada {
+    width: $ancho;
+    height: $largo;
+    float: left;
+    margin-right: 50px;
+    margin-bottom: 30px;
+}
+
+
+@media(max-width: 550px) {/* Medida Telefono */
+
+.mainFotoEntrada {
+    width: $ancho - 100px;
+    height: $largo / 2;
+    margin-right: 20px;
+    margin-bottom: 15px;
+    }
+}
