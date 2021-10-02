@@ -1,3 +1,9 @@
+.table {
+  margin-left: 10px;
+  width: 1000px;
+  height: 100 .table;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -215,6 +221,11 @@ body {
   border-radius: 5px;
   width: 130px;
   text-align: center;
+}
+
+.footer__asociate {
+  margin-top: 40px;
+  margin-left: 10px;
 }
 
 /*cree varios div ya que no lograba que me quede bien las partes donde esta colocado el sexo y los terminos*/

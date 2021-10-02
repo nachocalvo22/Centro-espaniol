@@ -1,3 +1,5 @@
+# 3er Pre-Entrega
+- Aplicacion de Bootstrap en un Form y en Actividades.
 # Entrega Sass II
 - Aplicacion de Sass en los dos Import Historia y 
 - Coloque un Media Query en Noticias solo para poder realizar el desafio. Por eso se repite el query de Noticias.
